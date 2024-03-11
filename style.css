@@ -1,13 +1,51 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-} 
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+.cards .card .header .title {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: wrap;
+    margin: 0 auto;
+    width: 250px;
+    text-align: left;
+    box-sizing: border-box;
+}
 body {
-    background-color: rgba(236, 219, 252, 0.61);
+    background-color: rgba(230, 211, 230, 0.986);
+}
+#card1 {
+    background-image: url(https://outanime.com/wp-content/uploads/2023/10/Primera_temporada_29-742x1024.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 300px;
+    height: 350px;
+}
+#card2{
+    background-image: url(https://images.cdn3.buscalibre.com/fit-in/360x360/92/79/9279a0b61ac4fcb5c93feb2152bba13b.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 300px;
+    height: 350px;
+}
+#card3 {
+    background-image: url(https://spice.eplus.jp/images/xb7Xq77Gr9gb17ZCQ95yR8jBlLO7UdcpDK7o7OqWvFhD1DTRKJK1t2I9nquJIwAx/);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 300px;
+    height: 350px;
+}
+#card4 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 300px;
+    height: 350px;
 }
 .img {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.349);
     width: 125px;
     height: 145px;
     border-radius: 50%;
@@ -34,8 +72,6 @@ body {
     justify-content: center;
 }
 .cards .card {
-    background-color: rgb(62, 2, 158);
-    color: #fff;
     width: 300px;
     height: 350px;
     border-radius: 10px;
@@ -44,17 +80,71 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-
-    transition: all 0.3s ease;
-    box-shadow: -3px 0 10px rgb(48, 1, 124), -4px 0 10px rgba(47, 1, 122, 0.918),  -4px 0 10px rgba(49, 1, 120, 0.493);
 }
-.cards .card a {
-    color: rgb(0, 255, 42);
+.cards .header {
+    background-color: rgba(255, 255, 255, 0.105);
+    transition: all 0.3s ease;
+    box-shadow: -3px 0 10px rgba(255, 255, 255, 0.095), -4px 0 10px rgba(255, 255, 255, 0.065),  -4px 0 10px rgba(255, 255, 255, 0.025);
+}
+.cards #card1 {
+    background-color: rgb(236, 117, 4);
+    color: rgb(255, 154, 72);
+    transition: all 0.3s ease;
+    box-shadow: -3px 0 10px rgba(236, 116, 4, 0.829), -4px 0 10px rgba(236, 116, 4, 0.753),  -4px 0 10px rgba(236, 116, 4, 0.582);
+}
+.cards #card2 {
+    background-color: rgb(158, 135, 2);
+    color: #013b3d;
+    transition: all 0.3s ease;
+    box-shadow: -3px 0 10px rgba(158, 135, 2, 0.884), -4px 0 10px rgba(158, 135, 2, 0.753),  -4px 0 10px rgba(158, 135, 2, 0.555);
+}
+.cards #card3 {
+    background-color: rgb(158, 2, 54);
+    color: #fd5ea0;
+    transition: all 0.3s ease;
+    box-shadow: -3px 0 10px rgba(138, 1, 46, 0.89), -4px 0 10px rgba(158, 2, 54, 0.753),  -4px 0 10px rgba(158, 2, 54, 0.61);
+}
+.cards #card4 {
+    background-color: rgb(255, 222, 178);
+    color: #302701;
+    transition: all 0.3s ease;
+    box-shadow: -3px 0 10px rgba(255, 222, 178, 0.911), -4px 0 10px rgba(255, 222, 178, 0.856),  -4px 0 10px rgba(255, 222, 178, 0.603);
+}
+.cards #card1 a {
+    background-color: rgba(253, 251, 250, 0.041); 
+    color: rgb(255, 154, 72);
     text-decoration: none;
     font-weight: bold;
 }
-.cards .card a:hover {
-    color: lightyellow;
+.cards #card1 a:hover {
+    color: rgb(219, 3, 3);
+}
+.cards #card2 a {
+    background-color: rgba(253, 251, 250, 0.041); 
+    color: #013b3d;
+    text-decoration: none;
+    font-weight: bold;
+}
+.cards #card2 a:hover {
+    color: #00191a;
+}
+.cards #card3 a {
+    background-color: rgba(253, 251, 250, 0.041); 
+    color: #fd5ea0;
+    text-decoration: none;
+    font-weight: bold;
+}
+.cards #card3 a:hover {
+    color: #7a0134;
+}
+.cards #card4 a {
+    background-color: rgba(253, 251, 250, 0.041); 
+    color: #302701;
+    text-decoration: none;
+    font-weight: bold;
+}
+.cards #card4 a:hover {
+    color: #bb5714;
 }
 .cards .card .header {
     flex: 1;
@@ -75,4 +165,12 @@ body {
 .element-1:hover 
 .element-2:hover {
     margin-left: -130px;
+}
+@media (max-width: 750px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
